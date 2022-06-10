@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: #EAC926;
+}
+body{
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+.precio{
+    font-size: 18px;
+}
+h3{
+    font-size: 24px;
+}
+.descuento{
+    font-size: 16px;
+    color: green;
+}
+h5 {
+    font-size: 16px;
+}
+.burger-menu{
+    color: rgb(255, 255, 255);
+    text-align: center;  
+}
+.fondoBurger{
+    background-color: blue;
+    max-width: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pie{
+    background-color: rgb(250, 250, 250);
+    text-align: center;
+}
+.iconos{
+    color: #03264C ;
+    font-size: 2em;
+    margin-bottom: 10px;
+
+}
+.main{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ebebeb;
+}
+.articulo{
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100)
+}
+.caja{
+    border-top: 1px solid #ebebeb;
+    border: 15px;
+    background-color: white;
+
+    
+}
+.envio{
+    color: green;
+    font-size: 30px;
+}
+@media(max-width:361px ){
+    /*tablet*/
+.novisible{
+    display: none;
+    
+}
+.caja{
+    display: none;
+}
+}
+@media(min-width: 769px ){
+    
+ .burger-menu{
+     display: none;
+ }
+
+ .articulo{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+ }
+ } 
+ .logo{
+     width: 30%;
+     text-align: left;
+ } 
