@@ -3,13 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-.header{
-    background-color: #EAC926;
-}
+
+
 body{
     background-color: #ebebeb;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
+}
+img{
+    width: 100%;
+   
+}
+.contenedor1{
+    background-color: #EAC926;
+    display: flex;
+    flex-flow: row wrap;
+    
+    
+ 
+    
+}
+.contenedor1 section{
+    
+
 }
 .precio{
     font-size: 18px;
@@ -51,8 +67,8 @@ h5 {
 }
 .articulo{
     padding: 10px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100)
-}
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+   
 .caja{
     border-top: 1px solid #ebebeb;
     border: 15px;
@@ -64,14 +80,15 @@ h5 {
     color: green;
     font-size: 30px;
 }
-@media(max-width:361px ){
-    /*tablet*/
+
+@media(min-width:361px ){
 .novisible{
-    display: none;
+    display: flex;
     
 }
+
 .caja{
-    display: none;
+    display: flex;
 }
 }
 @media(min-width: 769px ){
@@ -79,7 +96,10 @@ h5 {
  .burger-menu{
      display: none;
  }
-
+ .img-banner{
+    display: flex;
+    margin-top: 94px;
+}
  .articulo{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
  }
