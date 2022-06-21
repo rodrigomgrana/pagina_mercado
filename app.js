@@ -2,7 +2,12 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
-//const PORT = process.env.PORT || 3040;
+app.set('puerto',process.env.PORT || 3000)
+
+
+
+app.listen(app.get('puerto'), ()=>console.log(`Servidor escuchando en puerto ${app.get('puerto')}`));
+
 
 app.use(express.static("public"));
 
@@ -20,4 +25,4 @@ app.get("/login", (req, res) => {
 });
 
  app.listen(3040, () => console.log("ingresó correctamente")); 
-//app.listen(PORT, () => console.log("running on port 3040"));
+
